@@ -53,6 +53,9 @@ class _LoginFormState extends State<LoginForm> {
                 },
               ),
             ),
+            Spacer(
+              flex: 1,
+            ),
             Expanded(
               flex: 3,
               child: TextFormField(
