@@ -36,6 +36,7 @@ class _LoginFormState extends State<LoginForm> {
               child: TextFormField(
                 controller: _emailController,
                 decoration: InputDecoration(
+                  alignLabelWithHint: true,
                   hintText: k.Strings.kEmailHintText,
                 ),
                 validator: (value) {
@@ -62,9 +63,9 @@ class _LoginFormState extends State<LoginForm> {
                 controller: _passwordController,
                 obscureText: isHidden.value,
                 decoration: InputDecoration(
+                    alignLabelWithHint: true,
                     hintText: k.Strings.kPasswordHintText,
                     suffixIcon: IconButton(
-                      padding: EdgeInsets.all(0),
                       icon: Icon(isHidden.value
                           ? Icons.visibility_off
                           : Icons.visibility),

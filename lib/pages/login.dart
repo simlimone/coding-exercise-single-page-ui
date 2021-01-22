@@ -22,9 +22,10 @@ class Login extends StatelessWidget {
           ),
         ),
         Expanded(
-          flex: 3,
+          flex: 4,
           child: LoginForm(),
         ),
+        Spacer(flex: 1),
         Expanded(
           flex: 1,
           child: TextButton(
@@ -39,7 +40,7 @@ class Login extends StatelessWidget {
           ),
         ),
         Spacer(
-          flex: 2,
+          flex: 1,
         ),
         Expanded(
           flex: 1,
