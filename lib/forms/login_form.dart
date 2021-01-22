@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:single_page_ui/config/constants.dart' as k;
@@ -85,9 +86,10 @@ class _LoginFormState extends State<LoginForm> {
                 child: RaisedButton(
                   padding: EdgeInsets.all(15),
                   highlightColor: k.KColors.kLoginHighlightColor,
-                  child: Text(
+                  child: AutoSizeText(
                     k.Strings.kLoginButtonText,
                     style: kLoginButtonStyle,
+                    maxLines: 1,
                   ),
                   color: k.KColors.kLoginButtonColor,
                   shape: RoundedRectangleBorder(
@@ -98,9 +100,10 @@ class _LoginFormState extends State<LoginForm> {
                     if (_formKey.currentState.validate()) {
                       Scaffold.of(context).showSnackBar(
                         SnackBar(
-                          content: Text(
+                          content: AutoSizeText(
                             'You logged in with the email ${_emailController.text} and the password ${_passwordController.text}',
                             style: kSnackBarStyle,
+                            maxLines: 1,
                           ),
                           behavior: k.SnackBar.kSnackBarBehavior,
                         ),

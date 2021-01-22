@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:single_page_ui/controllers/home_controller.dart';
@@ -14,9 +15,10 @@ class Login extends StatelessWidget {
       children: [
         Expanded(
           flex: 1,
-          child: Text(
+          child: AutoSizeText(
             k.Strings.kAuthTitle,
             style: kAuthTitleStyle,
+            maxLines: 1,
           ),
         ),
         Expanded(
@@ -26,9 +28,10 @@ class Login extends StatelessWidget {
         Expanded(
           flex: 1,
           child: TextButton(
-            child: Text(
+            child: AutoSizeText(
               k.Strings.kForgotPassword,
               style: kForgotPasswordStyle,
+              maxLines: 1,
             ),
             onPressed: () {
               homeController.goToPage(2);
@@ -41,9 +44,10 @@ class Login extends StatelessWidget {
         Expanded(
           flex: 1,
           child: Center(
-            child: Text(
+            child: AutoSizeText(
               '-OR-',
               style: kSeparatorStyle,
+              maxLines: 1,
             ),
           ),
         ),
@@ -54,9 +58,10 @@ class Login extends StatelessWidget {
             child: RaisedButton(
               padding: EdgeInsets.all(15),
               highlightColor: k.KColors.kRegisterHighlightColor,
-              child: Text(
+              child: AutoSizeText(
                 k.Strings.kRegisterButtonText,
                 style: kRegisterButtonStyle,
+                maxLines: 1,
               ),
               color: k.KColors.kRegisterButtonColor,
               shape: RoundedRectangleBorder(

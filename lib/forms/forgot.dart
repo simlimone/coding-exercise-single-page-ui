@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,9 +25,10 @@ class ForgotPassword extends StatelessWidget {
         ),
         Expanded(
           child: Center(
-            child: Text(
+            child: AutoSizeText(
               'Forgot Password Page',
               style: kForgotPasswordStyle,
+              maxLines: 1,
             ),
           ),
         ),
