@@ -28,3 +28,6 @@ The Connect Button changes color when highlighted. It's the same for the Registe
 ### Login Snackbar
 
 ![Login Snackbar](demo/XiaoYing_Video_1611334864929.gif)
+
+# Extra
+The text auto adjust to the screen thanks to the auto_size_text package.
