@@ -75,6 +75,12 @@ class SnackBar {
 class Paddings {
   // Distance from borders of the Auth Container
   static final EdgeInsets kAuthContainerPadding = EdgeInsets.all(30);
+
+  // Padding inside the connect button
+  static final EdgeInsets kConnectButtonPadding = EdgeInsets.all(10);
+
+  // Padding inside the register button
+  static final EdgeInsets kRegisterButtonPadding = EdgeInsets.all(10);
 }
 
 class Images {

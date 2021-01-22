@@ -32,6 +32,7 @@ class _LoginFormState extends State<LoginForm> {
         () => Column(
           children: [
             Expanded(
+              flex: 3,
               child: TextFormField(
                 controller: _emailController,
                 decoration: InputDecoration(
@@ -53,6 +54,7 @@ class _LoginFormState extends State<LoginForm> {
               ),
             ),
             Expanded(
+              flex: 3,
               child: TextFormField(
                 controller: _passwordController,
                 obscureText: isHidden.value,
@@ -80,11 +82,13 @@ class _LoginFormState extends State<LoginForm> {
                 },
               ),
             ),
+            Spacer(flex: 1),
             Expanded(
+              flex: 3,
               child: SizedBox(
                 width: double.maxFinite,
                 child: RaisedButton(
-                  padding: EdgeInsets.all(15),
+                  padding: k.Paddings.kConnectButtonPadding,
                   highlightColor: k.KColors.kLoginHighlightColor,
                   child: AutoSizeText(
                     k.Strings.kLoginButtonText,

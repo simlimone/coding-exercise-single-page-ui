@@ -56,7 +56,7 @@ class Login extends StatelessWidget {
           child: SizedBox(
             width: double.maxFinite,
             child: RaisedButton(
-              padding: EdgeInsets.all(15),
+              padding: k.Paddings.kRegisterButtonPadding,
               highlightColor: k.KColors.kRegisterHighlightColor,
               child: AutoSizeText(
                 k.Strings.kRegisterButtonText,
