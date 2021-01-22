@@ -111,7 +111,6 @@ class _LoginFormState extends State<LoginForm> {
                           content: AutoSizeText(
                             'You logged in with the email ${_emailController.text} and the password ${_passwordController.text}',
                             style: kSnackBarStyle,
-                            maxLines: 1,
                           ),
                           behavior: k.SnackBar.kSnackBarBehavior,
                         ),
