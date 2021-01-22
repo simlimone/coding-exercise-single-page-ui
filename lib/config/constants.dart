@@ -60,8 +60,7 @@ class Strings {
       'Your password must be longer than ${Int.minimumPasswordLength} words';
 
   // String to show when the user leaves an empty field
-  static final String kFieldEmpty =
-      'This field cannot be empty. Enter the password.';
+  static final String kFieldEmpty = 'This field cannot be empty.';
 
   // String to show when the user enters an invalid email
   static final String kEmailNotValid = 'Enter a valid email, please.';
